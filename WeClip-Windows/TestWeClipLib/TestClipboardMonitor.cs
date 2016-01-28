@@ -1,19 +1,14 @@
 ﻿using System;
-using System.Runtime.CompilerServices;
 using System.Threading;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 using NUnit.Framework;
-using Safety.WeClip;
 
-namespace TestWeClipLib
+namespace Safety.WeClip.Clip
 {
-    //[TestFixture, RequiresThread(ApartmentState.STA)]
     [TestFixture]
     public class TestClipboardMonitor
     {
         private ClipboardForm m_form;
-        private Task m_formTask;
         private Thread m_thread;
 
         public class ClipboardForm : Form

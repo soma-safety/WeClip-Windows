@@ -2,7 +2,7 @@
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 
-namespace Safety.WeClip
+namespace Safety.WeClip.Clip
 {
     public class ClipboardMonitor : IDisposable
     {
@@ -44,8 +44,8 @@ namespace Safety.WeClip
 
                 if (OnClipboardChanged != null)
                 {
-                    
                     IDataObject clipboardData = Clipboard.GetDataObject();
+                    Console.WriteLine("##" + clipboardData.GetHashCode().ToString());
 
                     if (clipboardData.GetDataPresent(DataFormats.Text) == true)
                     {

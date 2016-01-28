@@ -7,7 +7,7 @@
     <ProjectGuid>{C18DFA09-F022-4F70-AAC6-C4A88B75FD2A}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>TestWeClipLib</RootNamespace>
+    <RootNamespace>Safety.WeClip</RootNamespace>
     <AssemblyName>TestWeClipLib</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="TestClipboardMonitor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="History\TestClipboardHistory.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\WeClipLib\WeClipLib.csproj">
